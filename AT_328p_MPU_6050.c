@@ -27,7 +27,7 @@ void uart_twi_setup(void)
     UCSR0C&=~((1<<UPM00) | (1<<UPM01) | (1<<USBS0) | (1<<UMSEL00) | (1<<UMSEL01));
     //ustawia prędkość TWI i uruchamia komunikację
     TWSR&=0x00;
-    TWBR = 72;    //10 =400kHz checked
+    TWBR = 72;     
 }
 
 void uart_putchar(int8_t c)
